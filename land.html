@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>LAND</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+  <div id="#">
+  </div>
+  <div class="header">
+    <div class="navbar">
+      <div class="logo">
+        <img width="50px" src="images/logo.png" alt="logo">
+      </div>
+      <div class="location">
+        <i class="fas fa-search" style="color:#002f34"></i>
+        <input type="text" placeholder="Pakistan">
+        <i class="fas fa-chevron-down" style="color:#002f34"></i>
+      </div>
+      <div class="search">
+        <input id="myInput" type="text" placeholder="Find Cars, Mobile, Phones and more..." onkeyup="searching()">
+        <span class="searchImg">
+          <a href="#">
+            <i class="fas fa-search"></i>
+          </a>
+        </span>
+      </div>
+      <div class="login">
+        <button>
+          <a href="#">
+            Login
+          </a>
+        </button>
+      </div>
+      <div class="sell">
+        <button>
+          <a href="#">
+            <img src="images/sell.jpg" alt="sell" width="90px">
+          </a>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="menuBar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul id="myUL" class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <b> ALL CATEGORIES </b>
+              <span>
+                <i class="fas fa-chevron-down" style="color:#002f34"></i>
+              </span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="main">
+                <div class="box">
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">
+                      <b>Vehicles</b>
+                    </a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Tractors & Trailers</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Boats</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Other Vehicles</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Rickshaw & Chingchi</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Buses, Vans & Trucks</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Spare Parts</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Car Accessories</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Car on Installments</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Cars</a>
+                  </div>
+                  <!-- <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a> -->
+                </div>
+                <div class="box">
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">
+                      <b>Mobiles</b>
+                    </a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Mobile Phones</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Accessories</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Tablets</a>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">
+                      <b>Animals</b>
+                    </a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Other Animals</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Pet Food & Accessories</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Horses</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Livestock</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Dogs</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Cats</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Hens & Aseel</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Birds</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Fish & Aquariums</a>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">
+                      <b>Furniture & Home Decor</b>
+                    </a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Other Household Items</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Office Furniture</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Curtains & Blinds</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Rugs & Carpets</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Painting & Mirrors</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Garden & Outdoor</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Tables & Dining</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Home Decoration</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Bed & Wardrobes</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Sofa & Chairs</a>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">
+                      <b>Fashion & Beauty</b>
+                    </a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Other Fashion</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Couture</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Lawn & Pret</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Wedding</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Watches</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Hair & Skin</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Make Up</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Jewellary</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Footwear</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Clothes</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Accessories</a>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">
+                      <b>Property for Rent</b>
+                    </a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Land & Plots</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Vacation Rentals-Guest Houses</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Roommates & Paying Guests</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Rooms</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Shops-Offices-Commerical Space</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Portions & Floors</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Apartments & Flats</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Houses</a>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">
+                      <b>Services</b>
+                    </a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Farm & Fresh Food</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Catering & Restaurant</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Home & Office Repair</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Movers & Packers</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Mailds & Domestic Help</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Health & Beauty</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Event Services</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Electronics & Computer Repair</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Other Services</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Web Development</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Drivers & Taxi</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Car Rental</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Travel & Visa</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Education & Classes</a>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">
+                      <b>Books, Sport & Hobbies</b>
+                    </a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Other Hobbies</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Gym Fitness</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Sports Equipment</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Musical Instruments</a>
+                  </div>
+                  <div class="subCategories">
+                    <a href="#" class="dropdown-item">Books & Magazines</a>
+                  </div>
+                </div>
+              </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="mobile.html" target="_blank">Mobile Phones
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cars.html" target="_blank">Cars</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="motorcycles.html" target="_blank">Motorycles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="houses.html" target="_blank">Houses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tv.html" target="_blank">TV-Video-Audio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tablets.html" target="_blank">Tablets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="land.html" target="_blank">Land & Plots</a>
+          </li>
+          <!-- <li class="nav-item">
+                                      <a class="nav-link disabled" href="#">Disabled</a>
+                                    </li> -->
+        </ul>
+        <!-- <form class="form-inline my-2 my-lg-0">
+                                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                  </form> -->
+      </div>
+    </nav>
+  </div>
+  <div class="itemBox" id="pack">
+    <div class="firstItemBox">
+      <div class="heading">
+        <span>
+          <h3>
+            More on Lands
+          </h3>
+        </span>
+      </div>
+      <div class="items">
+        <div class="item1">
+          <div class="image">
+            <div class="heart">
+              <i class="far fa-heart"></i>
+            </div>
+            <div class="featured">
+              Featured
+            </div>
+            <a href="images/lands/land1.png" target="_blank">
+              <img width="200px" src="images/lands/land1.png" alt="">
+              <div class="price">
+                <span>Rs 10,90,000</span>
+                <div class="name">
+                  Land1
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="item2">
+          <div class="image">
+            <div class="heart">
+              <i class="far fa-heart"></i>
+            </div>
+            <div class="featured">
+              Featured
+            </div>
+            <a href="images/lands/land2.jpg" target="_blank">
+              <img width="200px" src="images/lands/land2.jpg" alt="">
+              <div class="price">
+                <span>Rs 50,23,000</span>
+                <div class="name">
+                  Land2
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="item3">
+          <div class="image">
+            <div class="heart">
+              <i class="far fa-heart"></i>
+            </div>
+            <div class="featured">
+              Featured
+            </div>
+            <a href="images/lands/land3.jpg" target="_blank">
+              <img width="200px" src="images/lands/land3.jpg" alt="">
+              <div class="price">
+                <span>Rs 30,25,000</span>
+                <div class="name">
+                  Land3
+                </div>
+              </div>
+          </div>
+          </a>
+        </div>
+        <div class="item4">
+          <div class="image">
+            <div class="heart">
+              <i class="far fa-heart"></i>
+            </div>
+            <div class="featured">
+              Featured
+            </div>
+            <a href="images/lands/land4.jpg" target="_blank">
+              <img width="200px" src="images/lands/land4.jpg" alt="">
+              <div class="price">
+                <span>Rs 8,00,000</span>
+                <div class="name">
+                  Land4
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="back">
+    <button>
+      <span>
+        <a href="#">
+          Back To Top
+        </a>
+      </span>
+    </button>
+  </div>
+  <div class="footerImage">
+    <img width="100%" src="images/footer.jpg" alt="">
+  </div>
+  <div class="footerDetails">
+    <div class="popularCategories">
+      <h6>
+        POPULAR CATEGORIES
+      </h6>
+      <div>
+        Cars
+      </div>
+      <div>
+        Flats for rent
+      </div>
+      <div>
+        Jobs
+      </div>
+      <div>
+        Mobile Phones
+      </div>
+    </div>
+    <div class="trendingSearches">
+      <h6>
+        TRENDING SEARCHES
+      </h6>
+      <div>
+        Bikes
+      </div>
+      <div>
+        Watches
+      </div>
+      <div>
+        Books
+      </div>
+      <div>
+        Dogs
+      </div>
+    </div>
+    <div class="aboutUs">
+      <h6>
+        ABOUT US
+      </h6>
+      <div>
+        About OLX Group
+      </div>
+      <div>
+        OLX Blog
+      </div>
+      <div>
+        Contact US
+      </div>
+      <div>
+        OLX for Businesses
+      </div>
+    </div>
+    <div class="olx">
+      <h6>
+        OLX
+      </h6>
+      <div>
+        Help
+      </div>
+      <div>
+        Sitemap
+      </div>
+      <div>
+        Legal & Privacy information
+      </div>
+    </div>
+    <div class="followUs">
+      <h6>
+        FOLLOW US
+      </h6>
+      <div class="socialIcons">
+        <span>
+          <i class="fab fa-facebook"></i>
+        </span>
+        <span>
+          <i class="fab fa-twitter-square"></i>
+        </span>
+        <span>
+          <i class="fab fa-youtube"></i>
+        </span>
+        <span>
+          <i class="fab fa-instagram"></i>
+        </span>
+      </div>
+      <div>
+        <img width="70%" src="images/buttons.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div>
+      Other Countries India - South Africa - Indonesia
+    </div>
+    <div>
+      <b>Free Classifieds in Pakistan</b> . © 2006-2020 OLX
+    </div>
+  </div>
+
+</body>
+<script src="app.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</html>
